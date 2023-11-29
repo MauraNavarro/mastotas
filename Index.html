@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <style>
+  body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #77C834;
+  }
+  header {
+   background-color: #C83D34 ;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+  }
+  nav {
+   background-color: #77C834;
+   color: #fff;
+   padding: 10px;
+   text-align: left;
+  }
+  article {
+   background-color: #3471C8;
+   padding: 20px;
+   margin: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+  }
+  section {
+   background-color: #C534C8;
+   padding: 20px;
+   margin: 20px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+  }
+  aside {
+   background-color: #77C834;
+   color: #fff;
+   padding: 10px;
+   text-align: left;
+  }
+  footer {
+   background-color: #C8C334;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+ </style>
+ <script> 
+   //Función para procesar el formulario de guardar datos 
+    function guardarDatos() { 
+    //Obtener los valores de los campos del formulario 
+    var nombre = document.getElementById ("nombre").value; 
+    var apellido = document.getElementById ("apellido").value; 
+    var ciudad = document.getElementById ("ciudad").value; 
+    var país = document.getElementById ("país").value; 
+    // Función para procesar el formulario de búsqueda en Google
+        function buscarGoogle() {
+            var query = document.getElementById("busqueda").value;
+            var url = "https://www.google.com/search?q=" + encodeURIComponent(query);
+            // Redirigir a la página de búsqueda de Google
+            window.location.href = url;
+    }
+ </script>
+</head>
+<body>
+ <header>
+  <h1>DUEÑOS RESPONSABLES</h1> 
+ </header>
+ <nav>
+  <ul>
+   <li><a href="Problemas causados por dueños.html">Problematicas de nuestro dia a dia debido a dueños irresponsables</a></li>
+   <li><a href="Cuidado de tus mascotas.html">Cuidado de tu mascota</a></li>
+   <li><a href="Productos recomendados para el cuidado de tu mascota.html">Productos recomendados para el cuidado de tu mascota</a></li>
+  </ul>
+ <nav>
+ <article>
+  <h2>¿Quienes somos?</h2>
+  <p>Hola, somos Dueños responsables, una pagina que te ayudará a cuidar tu mascotas de la manera adecuada.</p>
+ </article>
+ <section>
+  <div class="form-container">
+  <h2>¿Qué son las mascotas?</h2>
+  <p>Un animal de compañía o mascota es un animal doméstico que se conserva con el propósito de brindar compañía o para el disfrute del cuidador.</p>
+  <div class="form-container">
+   <h2>¡Completa el formulario para más información!</h2>
+   <form>
+    <label for="nombre">Nombre:</label>
+	<input type="text" id="nombre" name="nombre"><br>
+	<label for="apellido">Apellido:</label>
+	<input type="text" id="apellido" name="apellido"><br>
+	<label for ="ciudad">Ciudad:</label>
+	<input type="text" id="ciudad" name="ciudad"><br>
+	<label for="país">País:</label>
+	<input type="text" id="país" name="país"><br>
+	<input type="submit" value="Guardar">
+   </form>
+  </div>
+  <div class="image-container">
+   <img src="imagen/image1.jpg" alt="Perro siendo paseado" width="300" height="250" >
+   <img src="imagen/image2.jpg" alt="Perro jugando" width="300" height="250" >
+  </div>
+ </section>
+ <aside>
+  <h3>Bibliografía</h3>
+  <p>-Wikipedia</p>
+  <h3>Buscar en Google</h3>
+  <form action="https://www.google.com/search" method="get">
+   <input type="text" name="q" placeholder="Buscar en Google">
+   <input type="submit" value="Buscar">
+  </form>
+  <h3>Video de Youtube</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/vgXw0H-jhUg?si=AzGfFS8fICMFE7xT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ </aside>
+ <footer>
+  &copy: 2023 DUEÑOS RESPONSABLES
+ </footer>
+</body>
+</html>
